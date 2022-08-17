@@ -22,7 +22,7 @@ def decode_word(morse_word)
 end
 
 def decode(message)
-  message_arr = message.split(' ')
+  message_arr = message.split('   ')
   decoded_message = []
   message_arr.each do |word|
     decoded_message.push(decode_word(word))
