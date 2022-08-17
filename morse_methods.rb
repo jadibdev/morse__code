@@ -21,5 +21,15 @@ def decode_word(morse_word)
   decoded_word__arr.join
 end
 
+def decode(message)
+  message_arr = message.split(' ')
+  decoded_message = []
+  message_arr.each do |word|
+    decoded_message.push(decode_word(word))
+  end
+  decoded_message.join(' ')
+end 
+
+print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
 
