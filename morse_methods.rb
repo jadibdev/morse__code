@@ -28,8 +28,4 @@ def decode(message)
     decoded_message.push(decode_word(word))
   end
   decoded_message.join(' ')
-end 
-
-print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
-
-
+end
